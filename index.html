@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Zombie apocalypse
+  </title>
+  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+</head>
+<body>
+
+  <h1>Zombie apocalypse!</h1>
+
+  <div class="description">
+    <h2>Controls: </h2>
+    <p>Left click: Move to target location</p>
+    <p>Right click: Shoot to target location</p>
+  </div>
+
+  <div class="game-container">
+    <div class="loader">
+      <div class="loader-progress"></div>
+    </div>
+    <canvas id="game" width="1024" height="768"></canvas>
+    <div class="disclaimer">
+      The game was created for learning purposes.
+      It is not optimized for anything at all. Runs smoothly in Chrome (as far as I can tell).
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://code.createjs.com/createjs-2015.05.21.min.js"></script>
+  <script src="scripts/lib/ndgmr.Collision.js"></script>
+  <script src="scripts/lib/utils.js"></script>
+  <script src="scripts/game/game.js"></script>
+  <script src="scripts/game/hero.js"></script>
+  <script src="scripts/game/zombie.js"></script>
+  <script src="scripts/game/bullet.js"></script>
+  <script src="scripts/game/main.js"></script>
+</body>
+</html>
